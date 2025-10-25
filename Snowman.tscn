@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6q7fusiuh4us"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_23142"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pbnak"]
+
+[node name="Snowman" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("SphereMesh_23142")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1.5949574, 0)
+mesh = SubResource("SphereMesh_23142")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7303438, 0)
+mesh = SubResource("SphereMesh_23142")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.685783, 0, 0, 0, 0.24422446, 0, 0, 0, 0.25961924, 0, 1.5978847, 0)
+mesh = SubResource("BoxMesh_pbnak")
