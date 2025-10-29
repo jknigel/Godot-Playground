@@ -56,3 +56,7 @@ position = Vector2(423, 173)
 
 [node name="Coin3" parent="." instance=ExtResource("2_0xm2m")]
 position = Vector2(562, 171)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(802, 334)
+scale = Vector2(8.96, 1.2)

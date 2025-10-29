@@ -34,3 +34,10 @@ transform = Transform3D(3.685783, 0, 0, 0, 0.24422446, 0, 0, 0, 0.25961924, 0, 1
 material_override = ExtResource("1_pbnak")
 mesh = SubResource("BoxMesh_pbnak")
 skeleton = NodePath("../..")
+
+[node name="Camera3D" type="Camera3D" parent="Snowman"]
+transform = Transform3D(1, 0, 0, 0, 0.22151451, 0.9751571, 0, -0.9751571, 0.22151451, 0.4587685, 6.5958233, 1.3326488)
+fov = 49.1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Snowman"]
+transform = Transform3D(1, 0, 0, 0, -0.15955383, 0.98718923, 0, -0.98718923, -0.15955383, 0.12525022, 5.5270934, 0)

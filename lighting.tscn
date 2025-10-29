@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyb3k3s81dsta"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_own74"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_jihx2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.9398732, 0, 0, 0, 0.9999995, 0, 0, 0, 3.8167682, 0, 0, 0)
+mesh = SubResource("PlaneMesh_own74")
+
+[node name="Ball" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4011175, 0)
+mesh = SubResource("SphereMesh_jihx2")
+skeleton = NodePath("../Floor")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.9939763, 0.10958533, -0.0014957646, 0.052190214, -0.46129364, 0.8857111, 0.09637098, -0.88045394, -0.46423423, 0, 2.373931, 0)
+visible = false
+light_color = Color(0.9182187, 0.90163434, 0.643316, 1)
+light_energy = 1.507
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(0.9984515, 0, 0.055629816, 0, 1, 0, -0.055629816, 0, 0.9984515, -1.3001993, 1.8269281, -1.9877996)
+visible = false
+light_color = Color(0.23967114, 0.7163611, 0.2789603, 1)
+light_energy = 11.734
+shadow_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.1219559, 0.99253553, 0, -0.99253553, -0.1219559, 0.045523047, 3.7374897, -0.054418564)
+light_color = Color(0.533847, 0.5250226, 0.99550694, 1)
+light_energy = 5.468
+shadow_enabled = true
+spot_range = 4.900646
+spot_angle = 21.739956
