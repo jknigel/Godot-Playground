@@ -1,11 +1,27 @@
 extends Node2D
 
+var score : int = 10
+var move_speed : float = 2.53
+var game_over: bool = false
+var ability : String = "Slash"
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+#Challenge
+var country : String = "Singapore"
+var population : int = 4000000
+var highest_altitude : float = 600.5
+var landlocked : bool = false
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _ready ():
+	move_speed = 0.1183
+	game_over = true
+	ability = "attack"
+	
+	print(move_speed)
+	print(game_over)
+	print(ability)
+	print(score)
+	
+	print("Country: " + country)
+	print("Population: %d" % [population])
+	print("Highest Altitude: %f" % [highest_altitude])
+	print("Is it landlocked? ", landlocked)
