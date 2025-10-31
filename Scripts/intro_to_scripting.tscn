@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0w2jeur307oc"]
+[gd_scene load_steps=4 format=3 uid="uid://b0w2jeur307oc"]
 
-[ext_resource type="Script" uid="uid://bd5pq226b2lp7" path="res://Scripts/conditions.gd" id="1_sor1c"]
+[ext_resource type="Script" uid="uid://cn6gi4uf7j1wv" path="res://Scripts/vectors.gd" id="1_02ahv"]
+[ext_resource type="Texture2D" uid="uid://bn5t7eog74s1y" path="res://Sprites/Player.png" id="2_25vfy"]
+[ext_resource type="Script" uid="uid://cyaspt20wx7rt" path="res://Scripts/mover.gd" id="3_fvs4v"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_sor1c")
+script = ExtResource("1_02ahv")
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(106, 106)
+texture = ExtResource("2_25vfy")
+script = ExtResource("3_fvs4v")
